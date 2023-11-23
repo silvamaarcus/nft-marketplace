@@ -67,3 +67,26 @@ option {
     opacity: 0.7; // aplicar opacidade
   }
 }
+
+// configurando botão secundariol
+.btn-2 {
+  display: inline-block;
+  padding: 12px 40px;
+
+  // use cores desejada...
+  color: $primary-normal;
+  background: transparent;
+
+  border-radius: 8px;
+  border: 1px solid $primary-normal;
+
+  @include typeface-2(p3, desktop);
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}

@@ -245,6 +245,7 @@ $gutter: 32px;
 .w-75 {
   width: 75%;
 }
+
 // Largura de 50% do tamanho p/ o elemento em relação ao pai.
 .w-50 {
   width: 50%;
@@ -252,6 +253,10 @@ $gutter: 32px;
 // Largura de 25% do tamanho p/ o elemento em relação ao pai.
 .w-25 {
   width: 25%;
+}
+
+.w-35 {
+  width: 35%;
 }
 
 // Bordas
@@ -400,4 +405,33 @@ $gutter: 32px;
       align-items: center;
     }
   }
+}
+
+// Section Arts
+.arts-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  h3 {
+    width: 35%;
+  }
+
+  .w-65 {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.card-art {
+  background-color: #131e3a;
+  border-radius: 28px;
+  padding: 20px;
+
+  border-top: 1px solid $primary-normal;
 }
