@@ -1580,6 +1580,145 @@ img {
   width: 100%;
 }
 
+header {
+  max-width: 1440px;
+  padding: 40px 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-desktop {
+  display: block;
+}
+@media screen and (max-width: 960px) {
+  .cta-desktop {
+    display: none;
+  }
+}
+
+.bx {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .bx {
+    display: block;
+  }
+}
+.bx::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 40%;
+  border-radius: 2px;
+  background-color: #d6ef0e !important;
+}
+.bx::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 60%;
+  border-radius: 2px;
+  background-color: #d6ef0e !important;
+}
+
+.bx.active::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(135deg);
+  top: 50%;
+  left: 50%;
+  transition: 0.6s ease;
+  border-radius: 2px;
+  background-color: #fff !important;
+}
+.bx.active::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+  left: 50%;
+  transition: 0.6s ease;
+  border-radius: 2px;
+  background-color: #fff !important;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  margin-left: 24px;
+}
+@media screen and (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+  z-index: 990;
+  transition: 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.menu-mobile li {
+  border-bottom: 1px solid #242424;
+}
+.menu-mobile li .link-menu-mobile {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px 24px 16px;
+  color: #fff;
+  text-align: center;
+}
+.menu-mobile li .link-menu-mobile:hover {
+  background-color: rgba(171, 191, 11, 0.25);
+  padding-left: 24px;
+}
+
+.menu-mobile.showmenu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.underline {
+  border-bottom: 1px solid #d6ef0e;
+  padding-bottom: 4px;
+}
+
 .icon {
   max-width: 64px;
   transition: 0.5s ease;
@@ -1667,15 +1806,16 @@ option {
 
 .btn {
   display: inline-block;
-  padding: 8px 24px;
+  padding: 12px 40px;
   color: #1e1e1e;
   background: linear-gradient(224.78deg, #d6ef0e 8.12%, #dff43c 92.21%) !important;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 200;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
 }

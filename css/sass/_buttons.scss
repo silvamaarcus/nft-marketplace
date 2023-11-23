@@ -44,7 +44,7 @@ option {
 // configurando botão principal
 .btn {
   display: inline-block;
-  padding: 8px 24px;
+  padding: 12px 40px;
 
   // use cores desejada...
   color: $black-normal;
@@ -54,10 +54,11 @@ option {
     #dff43c 92.21%
   ) !important;
 
-  border-radius: 4px;
+  border-radius: 8px;
   border: 0;
 
   @include typeface-2(p3, desktop);
+  font-weight: bold;
 
   cursor: pointer;
 
