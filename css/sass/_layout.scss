@@ -435,3 +435,87 @@ $gutter: 32px;
 
   border-top: 1px solid $primary-normal;
 }
+
+// Section Create
+
+.create {
+  @include responsive(s) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.create-title {
+  h3 {
+    width: 60%;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  @include responsive(s) {
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    .create-title-btn {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.create-art {
+  position: relative;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+
+    width: 370px;
+    height: 340px;
+
+    z-index: 1;
+
+    background-image: url("../../img/nft-create-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 60px;
+    left: -40px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+
+    width: 370px;
+    height: 420px;
+
+    z-index: -1;
+
+    background-image: url("../../img/nft-create-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: -60px;
+    right: 0;
+  }
+
+  @include responsive(s) {
+    display: none;
+  }
+}
