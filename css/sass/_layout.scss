@@ -408,13 +408,25 @@ $gutter: 32px;
 }
 
 // Section Arts
+.arts {
+  @include responsive(s) {
+    padding-top: 0;
+  }
+}
+
 .arts-title {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   h3 {
     width: 35%;
+
+    @include responsive(s) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .w-65 {
@@ -425,6 +437,20 @@ $gutter: 32px;
     a {
       margin-bottom: 11px;
     }
+
+    @include responsive(s) {
+      justify-content: center;
+
+      a {
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include responsive(s) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -437,7 +463,6 @@ $gutter: 32px;
 }
 
 // Section Create
-
 .create {
   @include responsive(s) {
     padding-top: 0 !important;
@@ -456,19 +481,7 @@ $gutter: 32px;
   }
 
   @include responsive(s) {
-    h3 {
-      width: 100%;
-      text-align: center;
-    }
-    p {
-      width: 100%;
-      text-align: center;
-    }
-
-    .create-title-btn {
-      justify-content: center;
-      align-items: center;
-    }
+    display: none;
   }
 }
 
@@ -517,5 +530,49 @@ $gutter: 32px;
 
   @include responsive(s) {
     display: none;
+  }
+}
+
+// Section Artists
+
+.artist-1 {
+  grid-area: a;
+}
+.artist-2 {
+  grid-area: b;
+}
+.artist-3 {
+  grid-area: c;
+}
+.artist-4 {
+  grid-area: d;
+}
+.artist-5 {
+  grid-area: e;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-areas:
+    "a a a b b b b b e e e e"
+    "c c c c d d d d e e e e";
+
+  @include responsive(s) {
+    .artist-1,
+    .artist-2,
+    .artist-3,
+    .artist-4,
+    .artist-5 {
+      margin: 0 !important;      
+    }
+
+    gap: 32px;
+
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c c"
+      "d d d"
+      "e e e";
   }
 }

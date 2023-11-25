@@ -553,13 +553,26 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .arts {
+    padding-top: 0;
+  }
+}
+
 .arts-title {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .arts-title h3 {
   width: 35%;
+}
+@media screen and (max-width: 960px) {
+  .arts-title h3 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .arts-title .w-65 {
   width: 65%;
@@ -568,6 +581,21 @@
 }
 .arts-title .w-65 a {
   margin-bottom: 11px;
+}
+@media screen and (max-width: 960px) {
+  .arts-title .w-65 {
+    justify-content: center;
+  }
+  .arts-title .w-65 a {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .arts-title {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card-art {
@@ -593,17 +621,8 @@
   width: 80%;
 }
 @media screen and (max-width: 960px) {
-  .create-title h3 {
-    width: 100%;
-    text-align: center;
-  }
-  .create-title p {
-    width: 100%;
-    text-align: center;
-  }
-  .create-title .create-title-btn {
-    justify-content: center;
-    align-items: center;
+  .create-title {
+    display: none;
   }
 }
 
@@ -640,6 +659,44 @@
 @media screen and (max-width: 960px) {
   .create-art {
     display: none;
+  }
+}
+
+.artist-1 {
+  grid-area: a;
+}
+
+.artist-2 {
+  grid-area: b;
+}
+
+.artist-3 {
+  grid-area: c;
+}
+
+.artist-4 {
+  grid-area: d;
+}
+
+.artist-5 {
+  grid-area: e;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-areas: "a a a b b b b b e e e e" "c c c c d d d d e e e e";
+}
+@media screen and (max-width: 960px) {
+  .artists-grid {
+    gap: 32px;
+    grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
+  }
+  .artists-grid .artist-1,
+  .artists-grid .artist-2,
+  .artists-grid .artist-3,
+  .artists-grid .artist-4,
+  .artists-grid .artist-5 {
+    margin: 0 !important;
   }
 }
 
@@ -1819,7 +1876,7 @@ nav {
   left: -100%;
 }
 .menu-mobile li {
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #abbf0b;
 }
 .menu-mobile li .link-menu-mobile {
   display: inline-block;
@@ -1830,16 +1887,18 @@ nav {
   text-align: center;
 }
 .menu-mobile li .link-menu-mobile:hover {
-  background-color: rgba(171, 191, 11, 0.25);
+  background-color: rgba(171, 191, 11, 0.85);
+  color: #242424;
   padding-left: 24px;
 }
 
 .menu-mobile.showmenu {
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #131E3A;
 }
 
 .underline {
