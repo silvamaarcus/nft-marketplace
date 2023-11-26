@@ -700,6 +700,30 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .subsc {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .subsc .subsc-news {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .subsc .subsc-news a {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .subsc-center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .s-0 {
   margin: 0;
   padding: 0;

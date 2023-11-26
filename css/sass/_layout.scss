@@ -563,7 +563,7 @@ $gutter: 32px;
     .artist-3,
     .artist-4,
     .artist-5 {
-      margin: 0 !important;      
+      margin: 0 !important;
     }
 
     gap: 32px;
@@ -574,5 +574,31 @@ $gutter: 32px;
       "c c c"
       "d d d"
       "e e e";
+  }
+}
+
+// Section Subscribe
+.subsc {
+  @include responsive(s) {
+    padding: 0;
+  }
+
+  .subsc-news {
+    @include responsive(s) {
+      flex-direction: column;
+      gap: 8px;
+      a {
+        margin-left: 0 !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.subsc-center {
+  @include responsive(s) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
