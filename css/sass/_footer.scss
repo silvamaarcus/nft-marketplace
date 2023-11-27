@@ -1,0 +1,47 @@
+footer {
+  margin-top: 92px !important;
+
+  @include responsive(s) {
+    padding-top: 0 !important;
+
+    .footer-mobile {
+      flex-direction: column;
+
+      .footer-title {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 32px;
+
+        .footer-social {
+          justify-content: center;
+        }
+      }
+
+      .menu-footer {
+        flex-direction: column;
+
+        text-align: center;
+        gap: 24px;
+      }    
+    }
+
+    .footer-copy {
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center;
+    }
+  }
+}
+
+.footer-social {
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.menu-footer {
+  gap: 94px;
+
+  ul {
+    list-style: none;
+  }
+}

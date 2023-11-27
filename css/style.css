@@ -2051,4 +2051,46 @@ option {
 }
 .btn-2:hover {
   opacity: 0.7;
+}
+
+footer {
+  margin-top: 92px !important;
+}
+@media screen and (max-width: 960px) {
+  footer {
+    padding-top: 0 !important;
+  }
+  footer .footer-mobile {
+    flex-direction: column;
+  }
+  footer .footer-mobile .footer-title {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  footer .footer-mobile .footer-title .footer-social {
+    justify-content: center;
+  }
+  footer .footer-mobile .menu-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  footer .footer-copy {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+}
+
+.footer-social {
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.menu-footer {
+  gap: 94px;
+}
+.menu-footer ul {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
