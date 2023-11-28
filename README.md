@@ -35,12 +35,12 @@ O objetivo principal deste projeto é criar um ambiente de aprendizado prático,
 
 - **Mobile:**
 ![mobile](https://github.com/silvamaarcus/nft-marketplace/assets/75142775/8709856b-657f-400c-8e6c-01c9fa4dca32)
-![mobile-active](https://github.com/silvamaarcus/nft-marketplace/assets/75142775/6e476a30-6b30-40a5-a072-4eda0b7712b5)
+
 
 
 ## Links
 - **Repositório: [Github](https://github.com/silvamaarcus/nft-marketplace)**
-- **URL: [Vercel](https://github.com/silvamaarcus/nft-marketplace)**
+- **URL: [Vercel](https://nft-marketplace-delta-seven.vercel.app/)**
 
 ## Meu processo
 ### Construção
