@@ -181,12 +181,14 @@ nav {
       padding: 24px 16px 24px 16px;
 
       color: $white-light;
+      background-color: #131e3a;
 
       text-align: center;
 
       &:hover {
-        background-color: rgba(171, 191, 11, 0.85);
-        color: $black-light;
+        background-color: #354774;
+        color: $white-light;
+        font-weight: bold;
         padding-left: 24px;
       }
     }
@@ -196,13 +198,11 @@ nav {
   // ocupar 100% da largura do pai (.relative)
   width: 100%;
   // ocupar 100% da altura da página, abaixo do menu
-  height: 40vh;
+  height: 100vh;
 
   position: absolute;
   top: 0;
   left: 0;
-
-  background-color: #131E3A;
 }
 
 // efeito underline para links desktop - js
